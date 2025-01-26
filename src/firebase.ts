@@ -2,15 +2,15 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, setPersistence, browserLocalPersistence } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-
-
+  
+// Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDWK8LHTIAPcNe-NPmHEs6ANxS6sWh0uEk",
-  authDomain: "hackjudge-knowcode.firebaseapp.com",
-  projectId: "hackjudge-knowcode",
-  storageBucket: "hackjudge-knowcode.firebasestorage.app",
-  messagingSenderId: "669229869517",
-  appId: "1:669229869517:web:599ad09865ea6887f63c84",
+  apiKey: "AIzaSyAskjNRKaLPC36hkv5gMbMVU1t5_zlV_5U",
+  authDomain: "knowcode-2-round-2.firebaseapp.com",
+  projectId: "knowcode-2-round-2",
+  storageBucket: "knowcode-2-round-2.firebasestorage.app",
+  messagingSenderId: "485340885672",
+  appId: "1:485340885672:web:169f63088c53d1a3fa489d"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -21,4 +21,3 @@ export { auth };
 
 // Initialize Firestore
 export const db = getFirestore(app);
-
